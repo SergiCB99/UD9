@@ -87,11 +87,11 @@ public class Serie implements Entregable {
 	}
 	
 
-	public void compareTo(Object a) {
+	public Object compareTo(Object a) {
 			if(this.numero_temporadas > ((Serie) a).numero_temporadas) {
-				System.out.println(this.titulo+ "tiene mas temporadas");
+				return this;
 			}else {
-				System.out.println(((Serie) a).titulo+ "tiene mas temporadas");
+				return a;
 			}
 	}
 	
