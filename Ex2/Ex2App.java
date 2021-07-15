@@ -58,27 +58,19 @@ public class Ex2App {
 		int cantidad_serie = 0;
 		int videojuego_largo = 0;
 		int cantidad_videojuego = 0;
-		
+		Serie s = new Serie();
+		Videojuego v = new Videojuego();
 		
 		for(int i=0;i<array1.length;i++) {
-			if(array1[i].numero_temporadas>cantidad_serie) {
-				serie_larga = i;
-				cantidad_serie =array1[i].numero_temporadas; 
-			}
+			s=(Serie) array1[i].compareTo(s);
 		}
 		
 		for(int i=0;i<array2.length;i++) {
-			if(array2[i].horas_estimadas>cantidad_videojuego) {
-				videojuego_largo = i;
-				cantidad_videojuego = array2[i].horas_estimadas;
-			}
+			v=(Videojuego) array2[i].compareTo(v);
 		}
 		
-		System.out.println("La serie con mas temporadas es");
-		System.out.println(array1[serie_larga].toString());
-		
-		System.out.println("El videojuego con mas horas es");
-		System.out.println(array2[videojuego_largo].toString());
+		System.out.println("Serie con mas temporadas "+s.toString());
+		System.out.println("Videojuego con mas horas "+v.toString());
 		
 	}
 	
