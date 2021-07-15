@@ -86,11 +86,11 @@ public class Videojuego implements Entregable {
 		return this.entregado;
 	}
 	
-	public void compareTo (Object a) {
+	public Object compareTo (Object a) {
 			if(this.horas_estimadas > ((Videojuego) a).horas_estimadas) {
-				System.out.println(this.titulo+ "tiene mas horas");
+				return this;
 			}else {
-				System.out.println(((Videojuego) a).titulo+ "tiene mas horas");
+				return a;
 			}
 	}
 	
