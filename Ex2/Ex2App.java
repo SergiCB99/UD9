@@ -7,7 +7,7 @@ public class Ex2App {
 		Videojuego array2[] = new Videojuego [5];
 		
 		Serie serie1 = new Serie();
-		Serie serie2 = new Serie("Padre de familia","Seth MacFarlane");
+		Serie serie2 = new Serie("Padre de familia",5,"Comedia","Seth MacFarlane");
 		Serie serie3 = new Serie("Los Simpsons","Matt Groening");
 		Serie serie4 = new Serie("Futurama","Matt Groening");
 		Serie serie5 = new Serie("South Park","Matt Stone");
