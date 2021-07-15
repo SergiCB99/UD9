@@ -7,5 +7,5 @@ public interface Entregable {
 	
 	public boolean isEntregado();
 	
-	public void compareTo(Object a);
+	public Object compareTo(Object a);
 }
